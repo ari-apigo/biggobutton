@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
 
         val btn = findViewById<Button>(R.id.button)
 
+        var txtPushed = getString(R.string.btn_text_pushed)
+
         var count = 0
         var s = ""
         btn.setOnClickListener {
@@ -24,7 +26,9 @@ class MainActivity : AppCompatActivity() {
                 s = "s"
             }
 
-            btn.setText("You have pushed me $count time$s!")
+            btn.setText(getString(R.string.btn_text_pushed, count, s))
+//            var test = getString(R.string.btn_text_pushed, count, s)
+//            Toast.makeText(this, test, Toast.LENGTH_LONG).show()
         }
     }
 }

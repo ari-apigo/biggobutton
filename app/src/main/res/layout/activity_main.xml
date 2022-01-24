@@ -8,16 +8,11 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="411dp"
-        android:layout_height="732dp"
-        android:backgroundTint="@android:color/holo_green_light"
-        android:text="@string/btn_text"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="40dp"
-        android:textStyle="italic"
+        style="@style/Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
